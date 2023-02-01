@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Graphical User Interface</title>
+</head>
+<body>
+  
+  <div class="section"> 
+    <h1>Graphical User Interface</h1>
+    <!--The search function from-->
+    <div class="controls">
+      <form id="form-list-control">
+          <input type="text" placeholder="Search StudentID" name="search-string">
+          <button type="button" name="btn-search" onclick="searchClick();">Search</button>
+      </form>
+    </div>
+    <!--Where the student details are generated-->
+    <div class="list" id="list">
+       
+    </div>
+</div>
+<!--The form for the sort and refresh buttons-->
+<div class="controls">
+  <form>
+    <button type="button" name="btn-sort" onclick="sortClick();">Sort ID</button>
+    <button type="button" name="btn-refresh" onclick="refreshClick();">Refresh</button>
+  </form>
+</div>
+<!--The form to add a student to the list-->
+<div class="section">
+    <h2>Add a student</h2>
+    <form id="form-add">
+        <label>Student ID: </label>
+        <input type="text" placeholder="StudentID" name="studentID">
+        <br>
+        <label>First Name: </label>
+        <input type="text" placeholder="First Name" name="fname">
+        <br>
+        <label>Last Name: </label>
+        <input type="text" placeholder="Last Name" name="lname">
+        <br>
+        <label>Qualification: </label>
+        <input type="text" placeholder="Qualification" name="qualification">
+        <br>
+        <button type="button" name="submit" onclick="addClick();">Add</button>
+    </form>
+</div>
+
+
+<script src="studentlist.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
